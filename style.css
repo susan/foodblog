@@ -1,0 +1,122 @@
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+	font-family: Georgia;
+}
+
+h1, footer {
+	text-align: center;
+	color: white;
+	padding: 15px;
+	background-color: orange;
+	min-width: 500px;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffa500;
+  padding: 10px 0px 10px 10px;
+}
+
+
+
+
+.container {
+	margin-top: 44px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, minmax(100px, 450px));
+	grid-gap: 10px 40px;
+	/*grid-auto-rows: 500px;*/
+  justify-items: center;
+  justify-content: center;
+
+
+}
+
+.a {
+ grid-column: 1 / span 1;
+ grid-row: 1 / span 1;
+/*grid-area: 1 / 1 / span 2 / span 1;*/
+}
+
+.b {
+	/*grid-column-start: 2;
+	grid-column-end: 3;*/
+grid-column: 2 / span 1;
+ grid-row: 1 / span 1;
+/*grid-area: 3 / 2 / span 2 / span 1;*/
+}
+
+.c {
+grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.d {
+grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.e {
+grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.f {
+grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.food {
+border-radius: 5px;
+/*border: 2px dodgerblue solid;*/
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+width: 300px;
+}
+
+img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.img2 {
+	padding-left: 10px;
+  padding-top: 10px;
+	width: 20px;
+	height: auto;
+}
+
+.mins {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 5px;
+}
+
+
+.description {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+
+  /*this gives you line on top*/
+  border-top: 1px solid #4a4a4a;
+}
+
+
